@@ -1,11 +1,11 @@
-# 🧠 RAG PDF Assistant
+#  RAG PDF Assistant
 
 Et Retrieval-Augmented Generation (RAG) projekt, der gør det muligt at søge intelligent i PDF-dokumenter ved hjælp af lokal embeddings og sprogmodeller.  
 Projektet kombinerer **LangChain**, **ChromaDB** og **Ollama** (f.eks. med *Mistral*) for at besvare spørgsmål baseret på indhold fra dine egne filer.
 
 ---
 
-## 🚀 Funktionalitet
+##  Funktionalitet
 
 - Læser og indlæser PDF-dokumenter fra en valgt mappe (`DATA_PATH`)
 - Deler tekst op i mindre bidder (chunks)
@@ -16,7 +16,17 @@ Projektet kombinerer **LangChain**, **ChromaDB** og **Ollama** (f.eks. med *Mist
 
 ---
 
-## 🗂️ Projektstruktur
+## Projektstruktur
+
+| **rag_project** |
+|------|-------|---------------------------|---------|
+| 1 | query_data.py # Indeholder funktioner til at søge i databasen og køre RAG-query |
+| 2 | create_data.py # Indeholder funktioner til at loade, splitte og gemme PDF-data i Chroma | 
+| 3 | main.py # Hovedfil, der kalder query_rag() | 
+| 4 | requirements.txt # Python dependencies| 
+| 5 | data/ # PDF-dokumenter der skal indlæses | 
+| 6 | chroma/ # Vedvarende database med embeddings (genereres automatisk) | 
+
 
 📁 rag_project/
 │
