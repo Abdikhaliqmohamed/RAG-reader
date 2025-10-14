@@ -26,15 +26,3 @@ Projektet kombinerer **LangChain**, **ChromaDB** og **Ollama** (f.eks. med *Mist
 | 4 | requirements.txt # Python dependencies| 
 | 5 | data/ # PDF-dokumenter der skal indlæses | 
 | 6 | chroma/ # Vedvarende database med embeddings (genereres automatisk) | 
-
-
-📁 rag_project/
-│
-├── query_data.py # Indeholder funktioner til at søge i databasen og køre RAG-query
-├── create_data.py # Indeholder funktioner til at loade, splitte og gemme PDF-data i Chroma
-├── main.py # Hovedfil, der kalder query_rag()
-│
-├── requirements.txt # Python dependencies
-│
-├── 📂 data/ # PDF-dokumenter der skal indlæses
-└── 📂 chroma/ # Vedvarende database med embeddings (genereres automatisk)
